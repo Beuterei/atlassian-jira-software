@@ -7,19 +7,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="https://wac-cdn.atlassian.com/dam/jcr:e348b562-4152-4cdc-8a55-3d297e509cc8/Jira%20Software-blue.svg?cdnVersion=1209" alt="Logo" height="60">
+  <img src="https://wac-cdn.atlassian.com/dam/jcr:e348b562-4152-4cdc-8a55-3d297e509cc8/Jira%20Software-blue.svg?cdnVersion=1209" alt="Logo" height="60">
 
-    <h3 align="center">atlassian/jira-software</h3>
+  <h3 align="center">atlassian/jira-software</h3>
 
-    <p align="center">
-        Docker setup for jira-software
-        <br />
-        <br />
-        ·
-        <a href="https://github.com/beuluis/atlassian-jira-software/issues">Report Bug</a>
-        ·
-        <a href="https://github.com/beuluis/atlassian-jira-software/issues">Request Feature</a>
-    </p>
+  <p align="center">
+    Docker setup for jira-software
+    <br />
+    <br />
+    ·
+    <a href="https://github.com/beuluis/atlassian-jira-software/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/beuluis/atlassian-jira-software/issues">Request Feature</a>
+  </p>
 </p>
 
 <!-- ABOUT THE PROJECT -->
