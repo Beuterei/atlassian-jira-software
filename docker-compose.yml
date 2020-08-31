@@ -1,0 +1,41 @@
+version: "3.7"
+services:
+    atlassian-jira:
+        image: atlassian/jira-software:8.12.0
+
+        deploy:
+            resources:
+              limits:
+                memory: 2G
+
+        networks:
+            - default
+
+        depends_on:
+            - postgres
+
+        restart: always
+
+        volumes:
+            - atlassianJiraData:/var/atlassian/application-data/jira
+
+        environment:
+            JVM_MINIMUM_MEMORY: 384m
+            JVM_MAXIMUM_MEMORY: 768m
+            JVM_RESERVED_CODE_CACHE_SIZE: 512m
+
+    postgres:
+        image: postgres:11.9-alpine
+
+        networks:
+            - default
+
+        restart: always
+
+        volumes:
+            - ./databaseEntrypoint:/docker-entrypoint-initdb.d
+            - atlassianJiraPostgresqlData:/var/lib/postgresql/data
+
+volumes:
+    atlassianJiraData: {}
+    atlassianJiraPostgresqlData: {}
