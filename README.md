@@ -63,7 +63,7 @@ touch .env.prod
 | `JIRA_MEMORY` | Defines how much memory the container can use | `2G` | false |
 | `JIRA_JVM_MINIMUM_MEMORY` | The minimum heap size of the JVM | `384m` | false |
 | `JIRA_JVM_MAXIMUM_MEMORY` | The maximum heap size of the JVM | `768m` | false |
-| `JVM_RESERVED_CODE_CACHE_SIZE` | The reserved code cache size of the JVM | `512m` | false |
+| `JIRA_JVM_RESERVED_CODE_CACHE_SIZE` | The reserved code cache size of the JVM | `512m` | false |
 | `PORT` | Which port is mapped to your host machine | `8096` | false |
 | `PG_DB` | Postgres DB name | `atlassianJiraDev` | false |
 | `PG_USER` | Postgres user | `atlassianJiraDev` | false |
@@ -111,7 +111,7 @@ touch .env.prod
 | `JIRA_MEMORY` | Defines how much memory the container can use | `2G` | false |
 | `JIRA_JVM_MINIMUM_MEMORY` | The minimum heap size of the JVM | `384m` | false |
 | `JIRA_JVM_MAXIMUM_MEMORY` | The maximum heap size of the JVM | `768m` | false |
-| `JVM_RESERVED_CODE_CACHE_SIZE` | The reserved code cache size of the JVM | `512m` | false |
+| `JIRA_JVM_RESERVED_CODE_CACHE_SIZE` | The reserved code cache size of the JVM | `512m` | false |
 | `PG_DB` | Postgres DB name | `atlassianJiraProd` | false |
 | `PG_USER` | Postgres user | `atlassianJiraProd` | false |
 | `PG_PASSWORD` | Postgres password | none | true |
