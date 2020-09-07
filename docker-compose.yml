@@ -6,7 +6,7 @@ services:
         deploy:
             resources:
               limits:
-                memory: 2G
+                memory: ${JIRA_MEMORY-2G}
 
         networks:
             - default
@@ -20,9 +20,9 @@ services:
             - atlassianJiraData:/var/atlassian/application-data/jira
 
         environment:
-            JVM_MINIMUM_MEMORY: 384m
-            JVM_MAXIMUM_MEMORY: 768m
-            JVM_RESERVED_CODE_CACHE_SIZE: 512m
+            JVM_MINIMUM_MEMORY: ${JIRA_JVM_MINIMUM_MEMORY-384m}
+            JVM_MAXIMUM_MEMORY: ${JIRA_JVM_MAXIMUM_MEMORY-768m}
+            JVM_RESERVED_CODE_CACHE_SIZE: ${JIRA_JVM_RESERVED_CODE_CACHE_SIZE-512m}
 
     postgres:
         image: postgres:11.9-alpine
