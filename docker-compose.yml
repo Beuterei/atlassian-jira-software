@@ -37,5 +37,7 @@ services:
             - atlassianJiraPostgresqlData:/var/lib/postgresql/data
 
 volumes:
-    atlassianJiraData: {}
-    atlassianJiraPostgresqlData: {}
+    atlassianJiraData:
+        driver: local
+    atlassianJiraPostgresqlData:
+        driver: local
